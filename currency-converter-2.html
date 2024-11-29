@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first JavaScript</title>
+</head>
+<body>
+    <script>
+        document.write("<h2>Currency converter<h2>");
+    </script>
+    <h1>My first JavaScript</h1>
+    <script>
+         let currency = 41.44;
+         let question = confirm("Ви хочете конвертувати долари?"); 
+        if(question){
+            let dollars = prompt("Введіть долари");
+            alert("Ви ввели " + dollars);
+            let grn = dollars*currency
+            alert(grn.toFixed(2)) 
+        }
+        else{
+          let grn = prompt("Введіть гривні");
+          alert("Ви ввели " + grn);
+          let dollars = grn/currency
+          alert(dollars.toFixed(2))
+        }
+    </script>
+</body>
+</html>
