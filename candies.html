@@ -14,16 +14,11 @@
        let count = prompt("Введіть кількість цукерок у коробці");
        while(question = confirm("Ще цукерку?")){
         count--;
-        if(count <= 4){
-            alert("У вас залишилось " + count + " цукерки");
-        }
-        if(count > 4){
-            alert("У вас залишилось " + count + " цукерок");   
-        }
         if(count <= 0){
             alert("Час купувати іншу коробку:(");
             break;
         }
+        alert("У вас залишилось " + count + " цукерок");
        }
     </script>
 </body>
