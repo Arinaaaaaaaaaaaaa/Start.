@@ -12,18 +12,18 @@
     <h1>My first JavaScript</h1>
     <script>
          let currency = 41.44;
-         let question = confirm("Ви хочете конвертувати долари?"); 
+         let question = confirm("Ви хочете конвертувати гривні?"); 
         if(question){
-            let dollars = prompt("Введіть долари");
-            alert("Ви ввели " + dollars);
-            let grn = dollars*currency;
-            alert(grn.toFixed(2)); 
-        }
-        else{
           let grn = prompt("Введіть гривні");
           alert("Ви ввели " + grn);
           let dollars = grn/currency;
           alert(dollars.toFixed(2));
+        }
+        else{
+            let dollars = prompt("Введіть долари");
+            alert("Ви ввели " + dollars);
+            let grn = dollars*currency;
+            alert(grn.toFixed(2));
         }
     </script>
 </body>
